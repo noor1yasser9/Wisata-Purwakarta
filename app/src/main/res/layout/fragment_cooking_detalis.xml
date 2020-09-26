@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_arrow_back_"
+            app:title="@string/details" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp">
+
+
+                    <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="4dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="16dp">
+
+                        <ImageView
+                            android:id="@+id/ivDetailHotel"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="16dp"
+                            android:background="@drawable/bg_circle_radius_primary"
+                            android:contentDescription="@string/details"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_dtl_kuliner"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:tint="@android:color/white" />
+
+
+                        <TextView
+                            android:id="@+id/tvNamaHotel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_toEndOf="@+id/ivDetailHotel"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.0"
+                            app:layout_constraintStart_toEndOf="@+id/ivDetailHotel"
+                            app:layout_constraintTop_toTopOf="@+id/ivDetailHotel"
+                            tools:text="@string/longTe" />
+
+
+                        <ImageView
+                            android:id="@+id/ivAddressHotel"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginTop="32dp"
+                            android:background="@drawable/bg_circle_radius_primary"
+                            android:contentDescription="@string/details"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_dtl_loc"
+                            app:layout_constraintStart_toStartOf="@+id/ivDetailHotel"
+                            app:layout_constraintTop_toBottomOf="@+id/tvNamaHotel"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/tvAddressHotel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@+id/ivAddressHotel"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/tvPhoneHotel"
+                            app:layout_constraintStart_toStartOf="@+id/tvPhoneHotel"
+                            app:layout_constraintTop_toTopOf="@+id/ivPhoneHotel"
+                            tools:text="@string/longTe" />
+
+                        <ImageView
+                            android:id="@+id/ivPhoneHotel"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="32dp"
+                            android:background="@drawable/bg_circle_radius_primary"
+                            android:contentDescription="@string/details"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_dtl_phone"
+                            app:layout_constraintStart_toStartOf="@+id/ivOpenTime"
+                            app:layout_constraintTop_toBottomOf="@+id/tvOpenTime"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/tvPhoneHotel"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_toEndOf="@+id/ivPhoneHotel"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/tvNamaHotel"
+                            app:layout_constraintStart_toStartOf="@+id/tvNamaHotel"
+                            app:layout_constraintTop_toTopOf="@+id/ivAddressHotel"
+                            tools:text="@string/longTe" />
+
+
+                        <ImageView
+                            android:layout_marginTop="32dp"
+                            android:id="@+id/ivOpenTime"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/bg_circle_radius_primary"
+                            android:padding="10dp"
+                            android:src="@drawable/ic_dtl_time"
+                            app:layout_constraintStart_toStartOf="@+id/ivAddressHotel"
+                            app:layout_constraintTop_toBottomOf="@+id/tvPhoneHotel"
+                            app:tint="@android:color/white" />
+
+                        <TextView
+                            android:id="@+id/tvOpenTime"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="@+id/tvPhoneHotel"
+                            app:layout_constraintStart_toStartOf="@+id/tvPhoneHotel"
+                            app:layout_constraintTop_toTopOf="@+id/ivOpenTime"
+                            tools:text="@string/longTe" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+</layout>

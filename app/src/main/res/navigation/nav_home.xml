@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_home.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.MainFragment"
+        android:label="MainFragment">
+        <action
+            android:id="@+id/action_mainFragment_to_hotelFragment"
+            app:destination="@id/hotelFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_cookingFragment"
+            app:destination="@id/cookingFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_prayPlaceFragment"
+            app:destination="@id/prayPlaceFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_wisataFragment"
+            app:destination="@id/wisataFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_komunitasFragment"
+            app:destination="@id/komunitasFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+        <action
+            android:id="@+id/action_mainFragment_to_ruteangkotFragment"
+            app:destination="@id/ruteangkotFragment"
+            app:enterAnim="@anim/slide_up"
+            app:exitAnim="@anim/slide_down"
+            app:popEnterAnim="@anim/slide_up"
+            app:popExitAnim="@anim/slide_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/hotelFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.HotelFragment"
+        android:label="HotelFragment">
+        <action
+            android:id="@+id/action_hotelFragment_to_detailsHotelFragment"
+            app:destination="@id/detailsHotelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsHotelFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.DetailsHotelFragment"
+        android:label="DetailsHotelFragment" />
+    <fragment
+        android:id="@+id/cookingFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.CookingFragment"
+        android:label="CookingFragment">
+        <action
+            android:id="@+id/action_cookingFragment_to_detailsHotelFragment"
+            app:destination="@id/detailsHotelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/prayPlaceFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.PrayPlaceFragment"
+        android:label="PrayPlaceFragment" />
+    <fragment
+        android:id="@+id/wisataFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.WisataFragment"
+        android:label="WisataFragment">
+        <action
+            android:id="@+id/action_wisataFragment_to_detailsHotelFragment"
+            app:destination="@id/detailsHotelFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/komunitasFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.KomunitasFragment"
+        android:label="KomunitasFragment">
+        <action
+            android:id="@+id/action_komunitasFragment_to_detailsKomunitasFragment"
+            app:destination="@id/detailsKomunitasFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailsKomunitasFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.DetailsKomunitasFragment"
+        android:label="DetailsKomunitasFragment" />
+    <fragment
+        android:id="@+id/ruteangkotFragment"
+        android:name="com.nurbk.ps.informationindonesya.ui.fragment.RuteangkotFragment"
+        android:label="RuteangkotFragment">
+        <action
+            android:id="@+id/action_ruteangkotFragment_to_detailsKomunitasFragment"
+            app:destination="@id/detailsKomunitasFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+</navigation>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Wisata Purwakarta</string>
+    <string name="daftar_kategori">Daftar Kategori</string>
+    <string name="hotel">Hotel</string>
+    <string name="details">Details</string>
+    <string name="apiKey">AIzaSyB_BfVtIqiA7gdVSFL8uNL4AM3WdUppEts</string>
+    <string name="longTe">
+        The Maps API provides a compass graphic which appears in the top left corner of the map under certain circumstances. The compass will only ever appear when the camera is oriented such that it has a non-zero bearing or non-zero tilt. When the user clicks on the compass, the camera animates back to a position with bearing and tilt of zero (the default orientation) and the compass fades away shortly afterwards. You can disable the compass appearing altogether by calling UiSettings.setCompassEnabled(boolean). However, you cannot force the compass to always be shown.
+    </string>
+    <string name="cooking">Cooking</string>
+    <string name="number">009527606412</string>
+    <string name="pray">Pray Place</string>
+
+</resources>
