@@ -2,9 +2,15 @@
 
 <a href="https://www.youtube.com/watch?v=tFJ29Kbf0sw&list=PLIf5OoJZjgrA7YJFlhGxLSQxvlngW2MOV&index=4&ab_channel=NoorEl-Nahhal" rel="nofollow">Youtube Video</a> </br>
 
+# ✨ Features Project Android:
+- 100% Kotlin
+- MVVM architecture
+- Single activity
+- Navigation Jetpack
+
 ![Group 2868](https://user-images.githubusercontent.com/41232970/94457297-09cfeb80-01bd-11eb-8614-81a800b140ed.png)
 
-
+# Used libraries
 - <a href="https://github.com/googlemaps/google-maps-services-java" rel="nofollow">1-services maps</a> </br>
 - <a href="https://github.com/android/location-samples" rel="nofollow">2-services location</a></br>
 - <a href="https://github.com/jd-alexander/Google-Directions-Android" rel="nofollow">3-alexande</a>r</br>
