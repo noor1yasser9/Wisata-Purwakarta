@@ -25,4 +25,4 @@
 - <a href="https://github.com/Ferfalk/SimpleSearchView" rel="nofollow">12-SimpleSearchView</a></br>
 - <a href="https://github.com/material-components/material-components-android" rel="nofollow">13-material</a></br>
 - <a href="https://github.com/81813780/AVLoadingIndicatorView" rel="nofollow">14-wang avi</a></br>
-- <a href="https://github.com/nemamayank/DataBinding" rel="nofollow">15-dataBinding</a></br>
+- <a href="https://github.com/nemamayank/DataBinding" rel="nofollow">15-dataBinding</a></br> 
