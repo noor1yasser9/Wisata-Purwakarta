@@ -5,7 +5,7 @@
 # ✨ Features Project Android:
 - 100% Kotlin
 - MVVM architecture
-- Single activity
+- Single activity 
 - Navigation Jetpack
 
 ![Group 2868](https://user-images.githubusercontent.com/41232970/94457297-09cfeb80-01bd-11eb-8614-81a800b140ed.png)
